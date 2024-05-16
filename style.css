@@ -1,0 +1,42 @@
+h1{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-family: Helvetica;
+}
+#labelDisplay{
+    display: block;
+    text-align: center;
+    font-size: 5em;
+    font-family: Helvetica;
+}
+#btnContainer{
+    text-align: center;
+}
+.button{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: hsl(172, 100%, 40%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.button:hover,
+.button:focus{
+    background-color: hsl(184, 73%, 68%);
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
